@@ -1,0 +1,189 @@
+section{
+    min-height:100vh !important;
+    overflow-x: hidden;
+    overflow-y:auto;
+    background-position: center !important;
+    background-size: cover !important;
+}
+/*Landing Page Section*/
+.bg-landing-page{
+  background: url('/public/assets/img/landing_page.png');
+}
+/*Home Section */
+.bg-home{
+  background: url('/public/assets/img/bg-home.png');
+}
+/*About Section */
+.bg-about{
+  background: url('/public/assets/img/bg-about.png');
+}
+.title-about-text{
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 332%;
+  color: white;
+  
+}
+
+.desc-about-text{
+  font-family: 'Merriweather', serif;
+  font-size: 118%;
+  color: white;
+}
+
+@media  screen and (max-width:770px) {
+  .title-about-text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .desc-about-text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-pic-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-pic{
+    width: 112%; 
+    height: 112%;
+  }
+}
+
+/*Tutorial Section */
+.bg-tutorial{
+  background: url('/public/assets/img/bg-tutorial.png');
+}
+/*Monster Section*/
+.bg-monster{
+  background: url('/public/assets/img/bg-monster.png');
+}
+/* Hero Section */
+.bg-hero{
+  background: url('/public/assets/img/bg-hero.png');
+}
+.flickity-page-dots .dot {
+  visibility: hidden;
+}
+.carousel-hero-cell {
+  /* width: 66%; */
+  /* height: 100%; */
+  width: 300px;
+  height: 700px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment:none;
+}
+
+.carousel-hero-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-hero-2{
+  margin-top: 30%;
+  margin-left: 50px;
+}
+.carousel-hero-cell-2 {
+  /* width: 66%; */
+  height: 800px;
+  width: 500px;
+  margin-right: 50px;
+  border-radius: 5px;
+  counter-increment:none;
+}
+
+.carousel-hero-cell-2:before {
+display: block;
+text-align: center;
+line-height: 200px;
+font-size: 80px;
+color: white;
+}
+  
+/* How to Play Section */
+.title-htp-text{
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 236%;
+  color: white;
+}
+
+.desc-htp-text{
+    font-family: 'Merriweather', serif;
+    font-size: 69%;
+    color: white;
+}
+
+.htp-text{
+  display: flex;
+}
+
+#htp-text-adjust{
+  justify-content: center;
+}
+/* World Map Section*/
+.bg-world-map{
+    background: url('/public/assets/img/bg-worldmap.png');
+}
+
+.carousel-wm-cell {
+  /* width: 66%; */
+  height: 300px;
+  width: 500px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment:none;
+}
+
+.carousel-wm-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.title-wm-text{
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 250%
+}
+
+.desc-wm-text{
+    font-family: 'Merriweather', serif;
+    font-size: 100%;
+}
+
+.wm-container{
+  margin-top: 5%;
+}
+
+.wm-title-container{
+  background: url('/public/assets/img/bg-title.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 40px 95px 40px 95px;
+}
+
+@media  screen and (max-width: 555px) {
+  .wm-title-container{
+    background-size: contain;
+    padding: 30px 95px 40px 95px;
+  }
+  .title-wm-text{
+    font-size: 125%;
+    
+  }
+  .desc-wm-text{
+    font-size: 60%;
+  }
+}
