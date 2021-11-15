@@ -14,22 +14,22 @@ var listWorldMap=[
 
 var listHero=[
     {
-        name:"Grana",default:"/public/assets/img/hero/GRANA.png"  , glow: "/public/assets/img/hero/GRANA-GLOW.png",static:"/public/assets/img/hero/GRANA-STATIC.png"
+        name:"Grana",default:"/public/assets/img/hero/GRANA.png",static:"/public/assets/img/hero/GRANA-STATIC.png"
     },
     {
-        name:"Astra",default:"/public/assets/img/hero/ASTRA.png"  , glow: "/public/assets/img/hero/ASTRA-GLOW.png", static:"/public/assets/img/hero/ASTRA-STATIC.png"
+        name:"Astra",default:"/public/assets/img/hero/ASTRA.png",static:"/public/assets/img/hero/ASTRA-STATIC.png"
     },
     {
-        name:"Curtis",default:"/public/assets/img/hero/CURTIS.png"  , glow: "/public/assets/img/hero/CURTIS-GLOW.png", static:"/public/assets/img/hero/CURTIS-STATIC.png"
+        name:"Curtis",default:"/public/assets/img/hero/CURTIS.png",static:"/public/assets/img/hero/CURTIS-STATIC.png"
     },
     {
-        name:"Laslow",default:"/public/assets/img/hero/LASLOW.png"  , glow: "/public/assets/img/hero/CURTIS-GLOW.png", static:"/public/assets/img/hero/LASLOW-STATIC.png"
+        name:"Laslow",default:"/public/assets/img/hero/LASLOW.png",static:"/public/assets/img/hero/LASLOW-STATIC.png"
     },
     {
-        name:"Tyra",default:"/public/assets/img/hero/TYRIA.png"  , glow: "/public/assets/img/hero/CURTIS-GLOW.png", static:"/public/assets/img/hero/TYRIA-STATIC.png"
+        name:"Tyra",default:"/public/assets/img/hero/TYRIA.png",static:"/public/assets/img/hero/TYRIA-STATIC.png"
     },
     {
-        name:"Quinn",default:"/public/assets/img/hero/QUINN.png"  , glow: "/public/assets/img/hero/CURTIS-GLOW.png", static:"/public/assets/img/hero/QUINN-STATIC.png"
+        name:"Quinn",default:"/public/assets/img/hero/QUINN.png",static:"/public/assets/img/hero/QUINN-STATIC.png"
     },
 ]
 app.use('/public', express.static(__dirname + "/public"));

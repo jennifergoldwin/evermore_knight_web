@@ -6,15 +6,81 @@
 
     <!--Home Section-->
     <section class="bg-home" id="home">
+        
+        <div class="container">
+            <nav class="navbar navbar-expand-md ">
+                <a class="navbar-brand" href="#" id="nav-logo">
+                    <img src="/public/assets/img/logo.png" alt="Creo Engine">
+                </a>
+                <button class=" custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
+                    <span class="custom-toggler navbar-toggler-icon "></span>
+                </button>
+                  
+                <div class="collapse navbar-collapse " id="navmenu" >
+                    <ul class="navbar-nav ml-auto " id="top-menu">
+                        <li class="nav-item">
+                                <a class="nav-link" href="#learn" id="nav-learn">
+                                    <img src="/public/assets/img/nav-learn-1.png">
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whitepaper" id="nav-whitepaper">
+                                <img src="/public/assets/img/nav-whitepaper-1.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#market" id="nav-market">
+                                <img src="/public/assets/img/nav-market-1.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
+            <div class="row align-bottom" >
+                <div class="col-md-6" >
+                    <div class="col" style="margin-top: 20%;">
+                        <div>
+                            <span class="title-monster-text" style="font-size: 350%;">FREE TO PLAY &<br>PLAY TO EARN</span>
+                        <p class="desc-monster-text" style="font-size: 150%; margin-top: 10px; margin-bottom: 40px;">NFT Assets. Turn-Based. Anime-Inspired</p>
+                        </div>
+                       
+                        <div class="row">
+                            <div>
+                                <button class="btn-store"><img src="/public/assets/img/btn-apple.png" style="max-width: 100%; max-height: 100%;"></button>
+                                <button class="btn-store"><img src="/public/assets/img/btn-google.png" style="max-width: 100%; max-height: 100%;"></button>
+
+                            </div>
+                            
+                            <div>
+                                <button class="btn-rounded"><i class="fab fa-telegram-plane fa-lg"></i></button>
+                                <button class="btn-rounded"><i class="fab fa-discord fa-lg"></i></button>
+                                <button class="btn-rounded"><i class="fab fa-instagram fa-lg"></i></button>
+                                <button class="btn-rounded"><i class="fab fa-facebook-f fa-lg"></i></button>
+                                <button class="btn-rounded"><i class="fab fa-twitter fa-lg"></i></button>
+                            </div>
+                            
+                        </div>
+                            
+                    </div>
+                    
+                </div>
+                <div class="col-md-6" style="margin-top: 20px;">
+                    <div style="display: flex; justify-content:center;">
+                        <img src="/public/assets/img/home-tyria.png" style="max-width: 129%; ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!--About Section-->
     <section class="bg-about" id="about">
         <div class="container">
             <div class="row align-item-center">
-                <div class="col-md-5">
-                    <div class="col" style="margin-top: 25%;">
+                <div class="col-md-5 htp-text" >
+                    <div class="row" style="justify-content: center; margin: auto; flex-direction: column;">
                         <div>
                             <img src="/public/assets/img/about-2.png" style="max-width: 100%; max-height: 100%;">
                         </div>
@@ -46,14 +112,14 @@
             <div class="row">
                 <div class="col-md-6" >
                     <div class="col" style="margin-top: 20%;">
-                        <span class="title-wm-text" style="color: white;">EXCLUSIVE<br>HEROES</span>
-                        <p class="desc-wm-text" style="color: white;">Meet valiant heroes that roam the world each with<br>their own unique traits. There are exclusive characters<br>
+                        <span class="title-monster-text" >EXCLUSIVE<br>HEROES</span>
+                        <p class="desc-monster-text">Meet valiant heroes that roam the world each with<br>their own unique traits. There are exclusive characters<br>
                             you can get in game that can vastly help your party in battle.<br>They are also valuable and limited time NFT's.
                         </p>
                         <div class="carousel-hero" data-flickity='{"freeScroll": false, "contain": true, "prevNextButtons": true, "pageDots": false }'>
                             <% for (var i = 0; i < listHero.length; i++) { %>
                                 <div class="carousel-hero-cell">
-                                    <img src="<%= listHero[i].static %>" style="max-width: 100%; max-height: 100%;">
+                                    <img src="<%= listHero[i].static %>" style="max-width: 100%; max-height: 100%;">        
                                 </div>
                             <% } %>
                         </div>
@@ -64,7 +130,7 @@
                     <div class="carousel-hero-2" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
                         <% for (var i = 0; i < listHero.length; i++) { %>
                             <div class="carousel-hero-cell-2">
-                                <img src="<%= listHero[i].default %>" style="max-width: 100%; max-height: 100%;">
+                                <img src="<%= listHero[i].default %>" style="max-width: 100%; max-height: 120%;">
                             </div>
                         <% } %>
                     </div>
@@ -77,7 +143,21 @@
 
     <!--Monster Section-->
     <section class="bg-monster" id="monster">
-
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-md-6 text-adjust">
+                    <div class="row align-item-center" style="margin: auto;">
+                        <span class="title-monster-text">CHALLENGING<br> ENEMIES AND<br>TOUGH ENCOUNTERS</span>
+                        <p class="desc-monster-text">Difficult encounters yield higher rewards.
+                            Outfitting your<br>party with skills, and well built heroes is the key 
+                            to suc-<br>cess! Monster and enemies alike won't go easy on you.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-top: 50px;">
+                    <img src="/public/assets/img/monster.png" style="max-width: 141%; max-height: 150%;">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--How to Play Section-->
@@ -102,10 +182,9 @@
                     <div class="col-md-7">
                         <div >
                             <img src="/public/assets/img/htp-4.png" style="max-width: 110%; max-height: 110%;">
-                            <!-- <img src="/public/assets/img/htp-3.png" style="max-width: 50%; max-height: 60%;"> -->
                         </div>
                     </div>
-                    <div class="col-md-5 htp-text" id="htp-text-adjust">
+                    <div class="col-md-5 text-adjust">
                         <div class="row" style=" margin: auto;">
                             <span class="title-htp-text">COLLECT LIMITED NFT ASSETS</span>
                             <p class="desc-htp-text">Collect unique characters and powerful legendary equipment<br>or
@@ -136,6 +215,6 @@
             </div>
         </div>
     </section>
-    <script src="/public//js/function.js"></script>
+    <script src="/public/js/function.js"></script>
 </body>
 </html>
