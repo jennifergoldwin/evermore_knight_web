@@ -2,6 +2,10 @@
 
     <!--Landing Page-->
     <section class="bg-landing-page" id="landing-page">
+        <div class="container-fluid tes" style="height: inherit;">
+        
+            
+        </div>
     </section>
 
     <!--Home Section-->
@@ -9,7 +13,7 @@
         
         <div class="container">
             <nav class="navbar navbar-expand-md ">
-                <a class="navbar-brand" href="#" id="nav-logo">
+                <a class="navbar-brand" href="#" id="nav-logo" style="width: 60%;">
                     <img src="/public/assets/img/logo.png" alt="Creo Engine">
                 </a>
                 <button class=" custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
@@ -76,7 +80,7 @@
     </section>
 
     <!--About Section-->
-    <section class="bg-about" id="about">
+    <section class="bg-about" id="about" style="display: flex; align-items: center;">
         <div class="container">
             <div class="row align-item-center">
                 <div class="col-md-5 htp-text" >
@@ -96,8 +100,8 @@
 
                 </div>
                 <div class="col-md-7">
-                    <div class="about-pic-container" style="display:block ;margin-top:16%; ">
-                        <img src="/public/assets/img/about-1.png" class="about-pic" style="max-width: 129%; max-height: 129%;">
+                    <div class="about-pic-container" style="display:block ;">
+                        <img src="/public/assets/img/about-1.png" class="about-pic" style="max-width: 100%; max-height: 100%;">
                     </div>
 
                 </div>
@@ -111,7 +115,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6" >
-                    <div class="col" style="margin-top: 20%;">
+                    <div >
                         <span class="title-monster-text" >EXCLUSIVE<br>HEROES</span>
                         <p class="desc-monster-text">Meet valiant heroes that roam the world each with<br>their own unique traits. There are exclusive characters<br>
                             you can get in game that can vastly help your party in battle.<br>They are also valuable and limited time NFT's.
@@ -126,13 +130,24 @@
                     </div>
                 </div>
 
-                <div class="col-md-6" >
+                <!-- <div class="col-md-6" >
                     <div class="carousel-hero-2" data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false }'>
                         <% for (var i = 0; i < listHero.length; i++) { %>
                             <div class="carousel-hero-cell-2">
-                                <img src="<%= listHero[i].default %>" style="max-width: 100%; max-height: 120%;">
+                                <img src="<%= listHero[i].default %>" style="max-width: 100%; max-height: 100%;">
                             </div>
                         <% } %>
+                    </div>
+                </div> -->
+
+                <div class="col-md-6" style="display: flex; align-items: center;">
+                    <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": true }'>
+                        <% for (var i = 0; i < listHero.length; i++) { %>
+                            <div class="carousel-cell">
+                                <img src="<%= listHero[i].default %>" style="max-width: 100%; max-height: 100%;">        
+                            </div>
+                        <% } %>
+                      
                     </div>
                 </div>
 
@@ -142,7 +157,7 @@
     </section>
 
     <!--Monster Section-->
-    <section class="bg-monster" id="monster">
+    <section class="bg-monster" id="monster" style="display: flex; align-items: center;">
         <div class="container">
             <div class="row align-item-center">
                 <div class="col-md-6 text-adjust">
@@ -153,8 +168,10 @@
                             to suc-<br>cess! Monster and enemies alike won't go easy on you.</p>
                     </div>
                 </div>
-                <div class="col-md-6" style="margin-top: 50px;">
-                    <img src="/public/assets/img/monster.png" style="max-width: 141%; max-height: 150%;">
+                <div class="col-md-6" >
+                    <div>
+                        <img src="/public/assets/img/monster.png" style="max-width: 100%; max-height: 100%;">
+                    </div>
                 </div>
             </div>
         </div>

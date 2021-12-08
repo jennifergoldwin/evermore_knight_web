@@ -1,4 +1,4 @@
-var $carousel2 = $('.carousel-hero-2');
+var $carousel2 = $('.carousel');
 var $carousel1 = $('.carousel-hero').flickity({
   on: {
     ready: function() {
@@ -11,4 +11,13 @@ var $carousel1 = $('.carousel-hero').flickity({
       // $('').css({'background-image':'url(images/example.jpg)'});
     }
   }
+});
+var $carousel = $('.carousel-hero');
+$('.carousel').flickity({
+  on: {
+    change: function (index){
+      $carousel.flickity('select',index,false,true);
+    } 
+  }
+
 });

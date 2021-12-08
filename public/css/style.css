@@ -15,7 +15,28 @@ section{
 
 /*Landing Page Section*/
 .bg-landing-page{
+  height: 100vh;
+}
+.tes{
   background: url('/public/assets/img/background/landing_page.png');
+  background-size: cover;
+  height: inherit;
+}
+@media (max-width: 768px) {
+  .tes{
+    background: url('/public/assets/img/background/landing-page-mobile.jpg') ;
+    background-size: 100% 100%;
+    
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1100px){
+  .tes{
+    background: url('/public/assets/img/background/landing-page-tablet.jpg') ;
+    background-size: 100% 100%;
+    
+    background-repeat: no-repeat;
+  }
 }
 
 /*Home Section */
@@ -51,7 +72,7 @@ section{
 }
 .title-about-text{
   font-family: 'Uncial Antiqua', cursive;
-  font-size: 332%;
+  font-size: 300%;
   color: white;
   
 }
@@ -105,13 +126,18 @@ section{
 /* Hero Section */
 .bg-hero{
   background: url('/public/assets/img/background/bg-hero.png');
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
-
+.flickity-page-dots {
+  bottom: 0 !important;
+}
 .flickity-page-dots .dot {
-  visibility: hidden;
+  visibility: collapse;
 }
 .carousel-hero{
-  margin-top: 80px;
+  margin-top: 30px;
   
 }
 .carousel-hero-cell {
@@ -136,25 +162,45 @@ section{
   color: white;
 }
 
-.carousel-hero-2{
-  margin-top: 30%;
-  margin-left: 50px;
-}
-.carousel-hero-cell-2 {
-  /* width: 66%; */
-  /* height: 400px; */
-  width: 500px;
+/* .carousel-hero-2{ */
+  /* margin-top: 30%; */
+  /* margin-left: 50px;
+  width: 100%;
+} */
+/* .carousel-hero-cell-2 {
+  width: 66%;
+  height: 400px;
+   width: 500px;
   margin-right: 50px;
   border-radius: 5px;
   counter-increment:none;
-}
+} */
 
-.carousel-hero-cell-2:before {
+/* .carousel-hero-cell-2:before {
 display: block;
 text-align: center;
 line-height: 300px;
 font-size: 80px;
 color: white;
+} */
+.carousel{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.carousel-cell {
+  width: 100%;
+  border-radius: 5px;
+
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* line-height: 200px; */
+  font-size: 80px;
+  color: white;
 }
 
 @media screen and (max-width: 770px) {
@@ -193,12 +239,17 @@ color: white;
 /* World Map Section*/
 .bg-world-map{
     background: url('/public/assets/img/background/bg-worldmap.png');
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
-
+.carousel-wm{
+  width: 100%;
+}
 .carousel-wm-cell {
-  height: 300px;
-  width: 500px;
-  margin-right: 10px;
+  width: 70%;
+  height: 400px;
+  /* margin-right: 10px; */
   border-radius: 5px;
   counter-increment:none;
 }
@@ -207,7 +258,7 @@ color: white;
   display: block;
   text-align: center;
   line-height: 200px;
-  font-size: 80px;
+  /* font-size: 80px; */
   color: white;
 }
 
@@ -221,9 +272,7 @@ color: white;
     font-size: 100%;
 }
 
-.wm-container{
-  margin-top: 5%;
-}
+
 
 .wm-title-container{
   background: url('/public/assets/img/bg-title.png');
